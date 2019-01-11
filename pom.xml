@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.willing-xyz.parentpom</groupId>
+    <artifactId>parentpom-springboot</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <groupId>io.github.willing-xyz.parentpom</groupId>
+        <artifactId>parentpom-common</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <properties>
+        <resource.delimiter>@</resource.delimiter>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.0.3.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Willing-Xyz/ParentPomSpringBoot</url>
+        <connection>https://github.com/Willing-Xyz/ParentPomSpringBoot.git</connection>
+        <developerConnection>https://github.com/Willing-Xyz/</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>willing</name>
+            <email>sxswilling@163.com</email>
+            <url>willing-xyz.github.io</url>
+        </developer>
+    </developers>
+
+
+
+</project>
